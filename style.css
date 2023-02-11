@@ -48,6 +48,7 @@ select {
 
 input[type="number"] {
   padding: 8px 12px;
+  width: 122px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
