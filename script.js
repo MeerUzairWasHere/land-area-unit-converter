@@ -109,6 +109,7 @@ function convertFromSqft(input) {
       break;
   }
 }
+
 function convertFromAcres(input) {
   switch (outputUnit.value) {
     case "kanal":
