@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Land area unit converter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kashmiri Land Area Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Kashmiri Land Area Converter</h1>
+        <form>
 
 
+            <label for="input-value">Enter Value:</label>
+            <input type="number" id="input-value" name="input-value" required>
+            
+            <label for="input-unit">Select Input Unit:</label>
+            <select id="input-unit" name="input-unit">
+                <option value="kanal">Kanal</option>
+                <option value="marla">Marla</option>
+                <option value="biswa">Biswa</option>
+                <option value="sqft">Square Feet</option>
+                <option value="acres">Acres</option>
+            </select>
 
-    
+            <label for="output-unit">Select Output Unit:</label>
+            <select id="output-unit" name="output-unit">
+                <option value="kanal">Kanal</option>
+                <option value="marla">Marla</option>
+                <option value="biswa">Biswa</option>
+                <option value="sqft">Square Feet</option>
+                <option value="acres">Acres</option>
+            </select>
+
+
+            <input type="submit" value="Convert">
+        </form>
+
+        <div id="output-div">
+            <p id="output"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
